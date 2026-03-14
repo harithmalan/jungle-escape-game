@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-black/60 backdrop-blur-md border border-white/20 shadow-2xl;
+  }
+  .glass-input {
+    @apply bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg;
+  }
+  .btn-primary {
+    @apply bg-gradient-to-b from-green-400 to-green-600 hover:from-green-300 hover:to-green-500 text-white border-b-4 border-green-800 active:border-b-0 active:translate-y-1 transition-all;
+  }
+  .btn-secondary {
+    @apply bg-gradient-to-b from-amber-400 to-amber-600 hover:from-amber-300 hover:to-amber-500 text-white border-b-4 border-amber-800 active:border-b-0 active:translate-y-1 transition-all;
+  }
+  .btn-danger {
+    @apply bg-gradient-to-b from-red-400 to-red-600 hover:from-red-300 hover:to-red-500 text-white border-b-4 border-red-800 active:border-b-0 active:translate-y-1 transition-all;
+  }
+  .title-text {
+    @apply text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)];
+  }
+}
